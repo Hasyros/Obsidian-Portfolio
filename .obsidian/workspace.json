@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "ac353ced4d07a5a0",
+        "id": "8b3aaa87129e002a",
         "type": "tabs",
         "children": [
           {
-            "id": "d128af596061a949",
+            "id": "c5ee0ff60b09d160",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Bienvenue.md",
+                "file": "HackTheBox/nmap/Nmap - Network Enumeration.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bienvenue"
+              "title": "Nmap - Network Enumeration"
+            }
+          },
+          {
+            "id": "23bee5142b488e55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Planning/Planning HTB Academy — Été 2026 (Red Team Track).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Planning HTB Academy — Été 2026 (Red Team Track)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -164,16 +179,27 @@
               "icon": "lucide-list",
               "title": "Plan de Self XSS - Race Condition"
             }
+          },
+          {
+            "id": "120a4c390b95b8d8",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Ouvrir le sélecteur rapide": false,
       "graph:Ouvrir la vue graphique": false,
       "canvas:Créer une nouvelle toile": false,
@@ -183,11 +209,33 @@
       "bases:Créer une nouvelle base": false
     }
   },
-  "active": "d128af596061a949",
+  "active": "23bee5142b488e55",
   "lastOpenFiles": [
+    "HackTheBox/XSS/XSS — Phishing & faux formulaires (vol de credentials).md",
+    "Planning/Planning HTB Academy — Été 2026 (Red Team Track).md",
+    "Planning",
+    "HackTheBox/XSS/XSS — Exfiltration de cookies (Session Hijacking).md",
+    "HackTheBox/XSS/XSS — Bypass & Filter Evasion (WAF, Sanitizers).md",
+    "HackTheBox/XSS/XSS.md",
+    "Outillage/Outillage.md",
+    "Outillage",
+    "HackTheBox/XSS",
+    "HackTheBox/nmap/Nmap - Network Enumeration.md",
+    "HackTheBox/HackTheBox - Index.md",
+    "nmap/Sans titre.md",
+    "RootMe/SQLI/NoSQL injection - Authentification.md",
+    "HackTheBox/nmap",
+    "RootMe/SQLI/SQL injection - Authentification - GBK.md",
+    "RootMe/SQLI/SQL Injection Routed.md",
+    "RootMe/SQLI/SQL Numerique.md",
+    "RootMe/SQLI/SQLI Error Based.md",
+    "RootMe/SQLI/SQLI Insertion.md",
+    "RootMe/SQLI/SQLI LoadFile.md",
+    "RootMe/SQLI/SQLI Second Order.md",
+    "RootMe/SQLI/SQLI Truncation.md",
+    "Bienvenue.md",
     "RootMe/XSS/Self XSS - Race Condition.md",
     "RootMe/RootMe - Index.md",
-    "HackTheBox/HackTheBox - Index.md",
     "_Notes/XSS - Payloads.md",
     "_Notes/XSS - Liens utiles.md",
     "_Notes/SQLI - Bypass UNION SELECT.md",
@@ -198,37 +246,16 @@
     "_attachments/Debutant_Complet/Debutant_Complet_04_81bc650d73.png",
     "_attachments/Debutant_Complet/Debutant_Complet_01_1266cbdd8d.png",
     "_attachments/Debutant_Complet/Debutant_Complet_02_169e49a552.png",
-    "RootMe/SQLI/SQL Injection Routed.md",
-    "RootMe/SQLI/SQL injection - Authentification - GBK.md",
-    "RootMe/SQLI/NoSQL injection - Authentification.md",
     "Portswigger/CORS/Basic origin reflection.md",
     "Portswigger/API/Mass Assignment.md",
-    "RootMe/SQLI/Sans titre.md",
     "HackTheBox/HackTheBox - Index.md.tmp.48320.1778075104323",
-    "Portswigger/PortSwigger - Index.md",
     "_attachments/Cours_Self_XSS_Race_Condition.pdf",
     "_attachments/Sql_Injection_Fundamentals_Module_Cheat_Sheet.pdf",
     "_attachments/Self_XSS_Race_Condition_exploit.html",
     "_Notes",
     "RootMe/XSS",
-    "HackTheBox/SQLI/Debutant Complet.md",
     "_attachments/Debutant_Complet/Debutant_Complet_10_57c9d4cf72.png",
     "_attachments/Debutant_Complet/Debutant_Complet_09_666b4d0457.png",
-    "_attachments/Debutant_Complet/Debutant_Complet_03_b1c0cb2f2d.png",
-    "_attachments/Debutant_Complet",
-    "RootMe/SQLI/SQL Numerique.md",
-    "_attachments/SQL_Numerique",
-    "_attachments/SQL_Injection_Routed",
-    "RootMe/SQLI/SQLI LoadFile.md",
-    "_attachments/SQLI_LoadFile",
-    "RootMe/SQLI/SQLI Error Based.md",
-    "RootMe/SQLI/SQLI Second Order.md",
-    "RootMe/SQLI/SQLI Truncation.md",
-    "RootMe/SQLI/SQLI Insertion.md",
-    "Portswigger/XSS/XSS stocke 2.md",
-    "Portswigger/XSS/DOM Based Filter Bypass.md",
-    "Portswigger/XSS/DOM Based - Eval.md",
-    "Portswigger/XSS/DOM Based - AngularJS.md",
-    "Portswigger/XSS/Self XSS - DOM Secrets.md"
+    "_attachments/Debutant_Complet/Debutant_Complet_03_b1c0cb2f2d.png"
   ]
 }
