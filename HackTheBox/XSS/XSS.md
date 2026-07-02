@@ -1,23 +1,11 @@
 ---
-
-## titre: "Cross-Site Scripting (XSS) — Fondamentaux, Stored & Reflected" plateforme: "Hack The Box Academy" module: "Cross-Site Scripting (XSS)" date: 2026-06-21 tags: [HTB, XSS, WebSec, StoredXSS, ReflectedXSS, Notes]
-
-# Cross-Site Scripting (XSS) — Fondamentaux, Stored & Reflected
-
-## 1. Qu'est-ce qu'une faille XSS ?
-
-Une vulnérabilité **XSS (Cross-Site Scripting)** survient lorsqu'une application web réinjecte une entrée utilisateur dans une page **sans la nettoyer (sanitize) ni l'échapper (escape)**. Le navigateur de la victime interprète alors cette entrée comme du code HTML/JavaScript légitime et l'exécute dans le contexte du site.
-
-Le point clé : le code s'exécute **côté client**, dans le navigateur de la victime, avec les droits et le contexte de session de celle-ci sur le site vulnérable. C'est ce qui rend l'attaque dangereuse — l'attaquant agit _comme si_ il était la victime sur ce site.
-
-Conséquences possibles selon le contexte :
-
-- Vol de cookies de session (session hijacking)
-- Exfiltration de données affichées dans la page
-- Défiguration / modification visuelle de la page (phishing, faux formulaires)
-- Exécution d'actions au nom de la victime (requêtes authentifiées)
-- Keylogging, redirections, etc.
-
+titre: "Cross-Site Scripting (XSS) — Fondamentaux, Stored & Reflected"
+aliases:
+  - "Cross-Site Scripting (XSS) — Fondamentaux, Stored & Reflected"
+plateforme: "Hack The Box Academy"
+module: "Cross-Site Scripting (XSS)"
+date: 2026-06-21
+tags: [HTB, XSS, WebSec, StoredXSS, ReflectedXSS, Notes]
 ---
 
 ## 2. Les trois types de XSS

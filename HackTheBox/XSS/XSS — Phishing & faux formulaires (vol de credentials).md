@@ -1,15 +1,11 @@
 ---
-
 titre: "XSS — Phishing & faux formulaires (vol de credentials)"
-
+aliases:
+  - "XSS — Phishing & faux formulaires"
 plateforme: "Hack The Box Academy"
-
 module: "Cross-Site Scripting (XSS)"
-
 date: 2026-06-30
-
 tags: [HTB, XSS, WebSec, Phishing, ReflectedXSS, CredentialHarvesting, Notes]
-
 ---
 
   

@@ -1,15 +1,11 @@
 ---
-
 titre: "Outillage — WSL2, Exegol, VPN HTB & serveur d'exfiltration"
-
+aliases:
+  - "Outillage — WSL2, Exegol, VPN HTB & serveur d'exfiltration"
 plateforme: "Hack The Box Academy"
-
 module: "Cross-Site Scripting (XSS)"
-
 date: 2026-06-30
-
 tags: [Outillage, WSL2, Exegol, Docker, OpenVPN, HTB, curl, PHP, Setup, Notes]
-
 ---
 
   
