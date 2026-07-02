@@ -1,3 +1,13 @@
+---
+titre: "Arsenal — Scripts SQLi & Automation"
+aliases:
+  - "Arsenal — Scripts SQLi & Automation"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, Arsenal, SQLi, SSRF, XXE, Python, Notes]
+---
+
 # ⚙️ ARSENAL — Scripts SQLi & Automation
 
 > Scripts réutilisables : SQLi SOAP (colonnes → dump), SQLi API, énumération d'IDs, scan de ports par SSRF, XXE. Copier-coller, adapter l'URL/les champs.
@@ -194,5 +204,3 @@ for pw in open("rockyou.txt", encoding="latin-1"):
         print(f"[+] TROUVÉ : {USER}:{pw}"); break
 ```
 > ⚡ Version dévastatrice : `system.multicall` teste des centaines de mdp en 1 requête (cf. [[06 - WordPress xmlrpc]]).
-
-Tags : #arsenal #sqli #ssrf #xxe #automation #python

@@ -1,3 +1,13 @@
+---
+titre: "SOAPAction Spoofing"
+aliases:
+  - "SOAPAction Spoofing"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, SOAP, RCE, Spoofing, Notes]
+---
+
 # 🧩 SOAPAction Spoofing
 
 Lié : [[03 - WSDL Énumération]] · [[15 - Arsenal Shells Python]]
@@ -80,5 +90,3 @@ Section 3 : `whoami` → `root`, puis shell interactif (`automate.py`). Question
 - Le serveur doit **parser le body** et vérifier la cohérence body ↔ SOAPAction.
 - Ne jamais router une opération sur la seule base d'un header contrôlable par le client.
 - Appliquer les contrôles d'accès sur l'opération **réellement exécutée**, pas sur celle déclarée.
-
-Tags : #soap #spoofing #rce #parser-differential

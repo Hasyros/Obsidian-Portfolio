@@ -1,3 +1,13 @@
+---
+titre: "WordPress — xmlrpc.php"
+aliases:
+  - "WordPress — xmlrpc.php"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WordPress, XMLRPC, BruteForce, SSRF, Notes]
+---
+
 # 🧩 WordPress — `xmlrpc.php`
 
 Lié : [[02 - Fondamentaux]] · [[12 - SSRF]]
@@ -74,5 +84,3 @@ Trois exploitations :
 - Désactiver `xmlrpc.php` si inutilisé (plugin ou règle serveur).
 - Désactiver spécifiquement `pingback.ping` et `system.multicall`.
 - Rate limiting / MFA sur l'authentification.
-
-Tags : #wordpress #xmlrpc #bruteforce #ssrf

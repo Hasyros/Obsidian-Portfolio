@@ -1,3 +1,13 @@
+---
+titre: "Server-Side Request Forgery (SSRF)"
+aliases:
+  - "Server-Side Request Forgery (SSRF)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, SSRF, XSPA, Base64, Notes]
+---
+
 # 🧩 Server-Side Request Forgery (SSRF)
 
 Lié : [[06 - WordPress xmlrpc]] · [[16 - Arsenal Scripts SQLi]] · [[18 - Cheatsheet Payloads]]
@@ -86,5 +96,3 @@ localhost      127.1      0.0.0.0      [::1]
 - Whitelist stricte des destinations autorisées (schéma, host, port).
 - Bloquer les IP privées/loopback/link-local, résoudre puis re-vérifier (anti-DNS-rebinding).
 - Désactiver les schémas inutiles (`file://`, `gopher://`).
-
-Tags : #ssrf #xspa #base64 #scan-interne

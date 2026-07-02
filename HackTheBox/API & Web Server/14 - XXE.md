@@ -1,3 +1,13 @@
+---
+titre: "XML External Entity (XXE) Injection"
+aliases:
+  - "XML External Entity (XXE) Injection"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, XXE, XML, FileRead, Notes]
+---
+
 # 🧩 XML External Entity (XXE) Injection
 
 Lié : [[16 - Arsenal Scripts SQLi]] · [[18 - Cheatsheet Payloads]] · [[12 - SSRF]] · [[10 - LFI]]
@@ -73,5 +83,3 @@ Astuce **in-band** : l'app réfléchit le champ email dans son erreur —
 
 - **Désactiver le traitement des entités externes** dans le parser XML (1-2 lignes selon la lib). LA remédiation standard.
 - Désactiver les DTD, utiliser des parsers sûrs par défaut.
-
-Tags : #xxe #xml #file-read #ssrf

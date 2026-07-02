@@ -1,3 +1,13 @@
+---
+titre: "Cross-Site Scripting (XSS) — contexte API"
+aliases:
+  - "Cross-Site Scripting (XSS) — contexte API"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, XSS, Encoding, Reflected, Notes]
+---
+
 # 🧩 Cross-Site Scripting (XSS)
 
 Lié : [[18 - Cheatsheet Payloads]]
@@ -75,5 +85,3 @@ Bypass avancés : encodage HTML, JSFuck, casse mixte, événements alternatifs. 
 - **Encoder en sortie** selon le contexte (HTML, attribut, JS, URL).
 - CSP stricte, `HttpOnly` sur les cookies de session.
 - Ne jamais réfléchir un input non assaini.
-
-Tags : #xss #encoding #reflected

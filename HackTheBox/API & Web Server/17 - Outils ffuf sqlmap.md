@@ -1,6 +1,16 @@
+---
+titre: "Outils — ffuf, sqlmap, nmap, curl, wordlists"
+aliases:
+  - "Outils — ffuf, sqlmap, nmap, curl, wordlists"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, Outillage, ffuf, sqlmap, nmap, curl, Notes]
+---
+
 # 🛠️ Outils — ffuf, sqlmap, nmap, curl, wordlists
 
-Lié : [[01 - Méthodologie - Audit Type]] · [[00 - INDEX]]
+Lié : [[01 - Méthodologie - Audit Type]] · [[API & Web Server - Index]]
 
 ---
 
@@ -150,5 +160,3 @@ find / -iname "*api*" -path "*seclists*" 2>/dev/null
 find / -name burp-parameter-names.txt 2>/dev/null
 ```
 > 💡 Pour l'API en conditions réelles, **Assetnote** (`wordlists.assetnote.io`, ex. `httparchive_apiroutes`) est plus moderne que SecLists. Un endpoint custom (ex. `userinfo`) peut n'être dans **aucune** wordlist → compléter par analyse du JS / Swagger / trafic Burp.
-
-Tags : #outils #ffuf #sqlmap #nmap #curl #wordlists

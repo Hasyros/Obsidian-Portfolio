@@ -1,3 +1,13 @@
+---
+titre: "Command Injection"
+aliases:
+  - "Command Injection"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, CommandInjection, PHP, RCE, Notes]
+---
+
 # 🧩 Command Injection
 
 Lié : [[15 - Arsenal Shells Python]] · [[18 - Cheatsheet Payloads]]
@@ -90,5 +100,3 @@ sudo tcpdump -i tun0 icmp        # puis injecter `ping -c1 TON_IP`
 - Ne jamais construire une commande shell depuis une entrée utilisateur ; préférer des API natives.
 - **Whitelister** strictement les fonctions/valeurs appelables (jamais `call_user_func` sur input brut).
 - `escapeshellarg`/`escapeshellcmd` sur **tous** les arguments — mais ça ne sauve rien si on court-circuite la fonction.
-
-Tags : #command-injection #php #rce

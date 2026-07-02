@@ -1,6 +1,16 @@
+---
+titre: "Web Services & API — Fondamentaux (SOAP, REST, WSDL)"
+aliases:
+  - "Web Services & API — Fondamentaux (SOAP, REST, WSDL)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, SOAP, REST, WSDL, XMLRPC, Notes]
+---
+
 # 📚 Fondamentaux — Web Services & API
 
-Lié : [[00 - INDEX]] · [[03 - WSDL Énumération]]
+Lié : [[API & Web Server - Index]] · [[03 - WSDL Énumération]]
 
 ---
 
@@ -82,5 +92,3 @@ Pas un protocole strict, une **convention**. Utilise les **verbes HTTP** (`GET`/
 | REST / JSON | auth bypass, IDOR, SQLi, SSRF, LFI, rate limiting absent, info disclosure |
 | JSON-RPC | manipulation de params, méthodes non documentées |
 | WordPress xmlrpc | brute-force (`wp.getUsersBlogs`), SSRF (`pingback.ping`), amplification (`system.multicall`) |
-
-Tags : #fondamentaux #soap #rest #wsdl #xmlrpc

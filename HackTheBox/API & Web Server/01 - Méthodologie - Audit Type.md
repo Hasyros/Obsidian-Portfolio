@@ -1,8 +1,18 @@
+---
+titre: "Web Service & API — Méthodologie d'audit type"
+aliases:
+  - "Web Service & API — Méthodologie d'audit type"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, Méthodologie, Recon, Checklist, Notes]
+---
+
 # 🔍 Méthodologie — Audit Type d'un Service Web / API
 
 > Le fil rouge du module. Pendant l'apprentissage on a tâtonné ; voici la **démarche ordonnée** à suivre pour ne rien rater et gagner du temps. À dérouler dans l'ordre sur toute cible web/API.
 
-Lié : [[00 - INDEX]] · [[17 - Outils ffuf sqlmap]]
+Lié : [[API & Web Server - Index]] · [[17 - Outils ffuf sqlmap]]
 
 ---
 
@@ -167,5 +177,3 @@ Service HTTP ?
 ├── Param injecté dans une commande ? ───────► Command Injection (05)
 └── WordPress ? ─────────────────────────────► xmlrpc.php (06)
 ```
-
-Tags : #méthodologie #recon #checklist #pentest

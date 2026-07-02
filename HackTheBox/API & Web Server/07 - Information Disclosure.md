@@ -1,3 +1,13 @@
+---
+titre: "Information Disclosure (Fuzzing)"
+aliases:
+  - "Information Disclosure (Fuzzing)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, InfoDisclosure, Fuzzing, IDOR, ffuf, Notes]
+---
+
 # 🧩 Information Disclosure (Fuzzing)
 
 Lié : [[08 - SQL Injection]] · [[17 - Outils ffuf sqlmap]] · [[16 - Arsenal Scripts SQLi]]
@@ -82,5 +92,3 @@ curl -H "X-Forwarded-For: 127.0.0.1" http://<TARGET>/endpoint
 - Réponses cohérentes (404 pour l'inconnu, pas de fuite de structure).
 - Contrôle d'accès sur chaque objet (éviter l'IDOR).
 - Ne jamais faire confiance aux headers `X-Forwarded-*` pour l'autorisation.
-
-Tags : #info-disclosure #fuzzing #idor #ffuf

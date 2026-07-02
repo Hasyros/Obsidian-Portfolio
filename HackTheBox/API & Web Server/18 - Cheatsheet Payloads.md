@@ -1,8 +1,18 @@
+---
+titre: "Cheatsheet — Payloads"
+aliases:
+  - "Cheatsheet — Payloads"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, Cheatsheet, Payloads, Reference, Notes]
+---
+
 # 📋 Cheatsheet — Payloads
 
 > Tous les payloads du module en un endroit. Ctrl+F ton besoin.
 
-Lié : [[00 - INDEX]]
+Lié : [[API & Web Server - Index]]
 
 ---
 
@@ -213,5 +223,3 @@ X-Client-IP: 127.0.0.1
 | `=` | `%3D` | | `%` | `%25` |
 
 Double encodage = encoder le `%` : `/` → `%2F` → `%252F`.
-
-Tags : #cheatsheet #payloads #référence

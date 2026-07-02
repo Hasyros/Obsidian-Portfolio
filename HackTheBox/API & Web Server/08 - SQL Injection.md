@@ -1,3 +1,13 @@
+---
+titre: "SQL Injection — API & SOAP"
+aliases:
+  - "SQL Injection — API & SOAP"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, SQLi, SQLite, MySQL, Notes]
+---
+
 # 🧩 SQL Injection — API & SOAP
 
 Lié : [[07 - Information Disclosure]] · [[03 - WSDL Énumération]] · [[16 - Arsenal Scripts SQLi]] · [[18 - Cheatsheet Payloads]]
@@ -110,5 +120,3 @@ Les caractères `< > &` cassent le XML **avant** d'atteindre le SQL. Les échapp
 - **Requêtes paramétrées** (prepared statements) — la seule vraie défense.
 - Least privilege sur le compte DB.
 - Messages d'erreur génériques (ne jamais renvoyer les erreurs SGBD au client !).
-
-Tags : #sqli #mysql #sqlite #soap #union

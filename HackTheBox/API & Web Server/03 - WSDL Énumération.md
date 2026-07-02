@@ -1,3 +1,13 @@
+---
+titre: "WSDL — Énumération"
+aliases:
+  - "WSDL — Énumération"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, SOAP, WSDL, Recon, Notes]
+---
+
 # 🧩 WSDL — Énumération
 
 Lié : [[02 - Fondamentaux]] · [[04 - SOAPAction Spoofing]] · [[08 - SQL Injection]]
@@ -71,5 +81,3 @@ Cette lecture révèle immédiatement deux vecteurs : **SQLi sur Login** (voir [
 - Ne pas exposer le WSDL publiquement (ou le protéger par authentification).
 - Ne jamais compter sur l'obscurité seule.
 - Valider/assainir les entrées de **chaque** opération côté serveur.
-
-Tags : #soap #wsdl #énumération #recon

@@ -1,3 +1,13 @@
+---
+titre: "Local File Inclusion (LFI)"
+aliases:
+  - "Local File Inclusion (LFI)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, LFI, PathTraversal, FileRead, Notes]
+---
+
 # 🧩 Local File Inclusion (LFI)
 
 Lié : [[18 - Cheatsheet Payloads]] · [[17 - Outils ffuf sqlmap]]
@@ -102,5 +112,3 @@ Module dédié : *File Inclusion* (HTB).
 - Ne jamais construire un chemin depuis un input ; utiliser un identifiant → mapping serveur.
 - `basename()`, whitelist de fichiers, `realpath()` + vérif du préfixe autorisé.
 - Désactiver les wrappers dangereux.
-
-Tags : #lfi #path-traversal #file-read

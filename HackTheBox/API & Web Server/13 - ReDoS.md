@@ -1,3 +1,13 @@
+---
+titre: "Regular Expression DoS (ReDoS)"
+aliases:
+  - "Regular Expression DoS (ReDoS)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, ReDoS, DoS, Regex, Notes]
+---
+
 # 🧩 Regular Expression Denial of Service (ReDoS)
 
 Lié : [[18 - Cheatsheet Payloads]]
@@ -73,5 +83,3 @@ Validation d'emails, téléphones, URLs, tout champ passé par regex serveur. **
 - Regex sans quantificateurs imbriqués ; moteurs à temps linéaire (RE2).
 - Timeout sur l'évaluation regex ; limite de longueur d'input.
 - Valider les emails par une lib éprouvée, pas une regex maison.
-
-Tags : #redos #dos #regex #backtracking

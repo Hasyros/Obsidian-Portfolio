@@ -1,3 +1,13 @@
+---
+titre: "Web Service & API Attacks — Index (MOC)"
+aliases:
+  - "Web Service & API Attacks — Index (MOC)"
+plateforme: "Hack The Box Academy"
+module: "Web Service & API Attacks"
+date: 2026-07-02
+tags: [HTB, API, WebService, SOAP, REST, MOC, Index, Notes]
+---
+
 # 📍 INDEX — Web Service & API Attacks
 
 > **Module HTB Academy** — Attaques sur les services Web et les API
@@ -76,5 +86,3 @@ Port 3003  → API root (/?id=) + ping-server.php : Cmd Injection, Info Disclosu
 5. **Deux composants qui interprètent différemment une requête = faille** (SOAPAction spoofing = cousin du request smuggling).
 
 ---
-
-Tags : #htb #web #api #soap #pentest #arsenal
