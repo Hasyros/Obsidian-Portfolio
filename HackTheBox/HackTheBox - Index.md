@@ -18,6 +18,12 @@ Writeups des modules HackTheBox Academy / boxes.
 	- Arsenal : [[15 - Arsenal Shells Python]] · [[16 - Arsenal Scripts SQLi]]
 	- Référence : [[18 - Cheatsheet Payloads]]
 
+## Attacking GraphQL
+- [[Attacking GraphQL - Index|Attacking GraphQL — vue d'ensemble]]
+	- Méthodologie : [[01 - Méthodologie - Cheminement GraphQL]]
+	- Arsenal : [[08 - Outils GraphQL]] · [[09 - Cheatsheet GraphQL]]
+	- Write-up : [[10 - Skills Assessment Write-up]]
+
 ## Ressources transverses
 - [[Outillage]] — WSL2, Exegol, VPN HTB & serveur d'exfiltration
 - [[Planning HTB Academy — Été 2026 (Red Team Track)]]
