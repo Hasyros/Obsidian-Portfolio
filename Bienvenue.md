@@ -1,18 +1,28 @@
 # Bienvenue
 
-Vault Obsidian rassemblant mes writeups CTF, organises par plateforme et categorie.
+Vault Obsidian rassemblant mes write-ups CTF, mes fiches de failles web et mes
+outils de sécurité offensive (formation cyber — ESILV).
 
-## Plateformes
+> ⚠️ **Cadre d'utilisation** : contenu strictement pédagogique. Les techniques
+> décrites ne doivent être employées que sur des cibles **explicitement
+> autorisées** (labs, CTF, pentest sous contrat, bug bounty en scope).
+> Détails et cadre juridique : voir le [README](README.md).
 
-- [[PortSwigger - Index|PortSwigger]] - Web Security Academy
-- [[RootMe - Index|RootMe]] - challenges Web Server / Web Client
-- [[HackTheBox - Index|HackTheBox]]
+## Catégories
+
+- 🚩 [[CTF - Index|CTF]] — write-ups par plateforme (Root-Me, PortSwigger, HTB, MidnightFlag)
+- 🕳️ [[Failles - Index|Failles]] — fiches par type de vulnérabilité (SQLI, XSS, SSRF, XXE…)
+- 🧭 [[Méthodo & Bypass - Index|Méthodo & Bypass]] — méthodologies, payloads, contournements
+- 🛠️ [[Outils - Index|Outils]] — mes scripts (blind SQLi, UUID, XSS Finder) + outillage
+
+## Accès rapide — techniques
+
+- ⭐ [[SQLI — Techniques avancées]]
+- ⭐ [[XSS — Techniques avancées]]
 
 ## Notes transverses
 
-- [[XSS - Payloads]]
-- [[XSS - Liens utiles]]
-- [[SQLI - Bypass UNION SELECT]]
+- [[XSS - Payloads]] · [[XSS - Liens utiles]] · [[SQLI - Bypass UNION SELECT]]
 
 ## Cheatsheets
 
