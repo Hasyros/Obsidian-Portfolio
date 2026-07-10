@@ -5,32 +5,28 @@ tags: [index, failles]
 
 # Failles — Index
 
-Fiches de référence par **type de vulnérabilité** : théorie, détection,
-exploitation, remédiation. Les techniques concrètes sont tirées de mes
-write-ups (voir dossier `CTF/`).
+**Un dossier par faille**, contenant plusieurs fiches : *repérage → tests →
+payloads → bypass*. Les techniques concrètes viennent de mes write-ups (dossier `CTF/`).
 
 ## Injections
-- **SQL / NoSQL** — [[08 - SQL Injection]] · ⭐ [[SQLI — Techniques avancées]]
-- **Command Injection** — [[05 - Command Injection]]
-- **XXE** — [[14 - XXE]]
+- [[SQLI - Index]] — injection SQL & NoSQL
+- [[Command Injection - Index]]
+- [[XXE - Index]]
 
 ## Client-side
-- **XSS** — [[XSS]] · [[11 - XSS]] · ⭐ [[XSS — Techniques avancées]]
-  - [[XSS — Bypass & Filter Evasion (WAF, Sanitizers)]]
-  - [[XSS — Exfiltration de cookies (Session Hijacking)]]
-  - [[XSS — Phishing & faux formulaires (vol de credentials)]]
+- [[XSS - Index]] — Cross-Site Scripting (DOM, CSTI, exfiltration, phishing, bypass WAF)
 
 ## Server-side
-- **SSRF** — [[12 - SSRF]]
-- **LFI** — [[10 - LFI]]
-- **File Upload** — [[09 - File Upload]]
-- **Information Disclosure** — [[07 - Information Disclosure]]
-- **ReDoS** — [[13 - ReDoS]]
+- [[SSRF - Index]]
+- [[LFI - Index]]
+- [[File Upload - Index]]
+- [[Information Disclosure - Index]]
+- [[ReDoS - Index]]
 
 ## API / Services
-- **GraphQL** — [[Attacking GraphQL - Index]]
-- **WSDL / SOAP** — [[03 - WSDL Énumération]] · [[04 - SOAPAction Spoofing]]
-- **WordPress (xmlrpc)** — [[06 - WordPress xmlrpc]]
+- [[GraphQL - Index]]
+- [[WSDL & SOAP - Index]]
+- [[WordPress xmlrpc - Index]]
 
-> Méthodologie et payloads transverses : voir [[API & Web Server - Index]] et le
-> dossier `Méthodo & Bypass/`.
+## Transverse
+- [[00 - Méthodologie & Arsenal]] — démarche d'audit, fondamentaux, scripts multi-failles

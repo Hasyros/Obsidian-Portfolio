@@ -10,19 +10,14 @@ outils de sécurité offensive (formation cyber — ESILV).
 
 ## Catégories
 
-- 🚩 [[CTF - Index|CTF]] — write-ups par plateforme (Root-Me, PortSwigger, HTB, MidnightFlag)
-- 🕳️ [[Failles - Index|Failles]] — fiches par type de vulnérabilité (SQLI, XSS, SSRF, XXE…)
-- 🧭 [[Méthodo & Bypass - Index|Méthodo & Bypass]] — méthodologies, payloads, contournements
-- 🛠️ [[Outils - Index|Outils]] — mes scripts (blind SQLi, UUID, XSS Finder) + outillage
+- 🚩 [[CTF - Index|CTF]] — write-ups de challenges résolus, par plateforme
+- 🕳️ [[Failles - Index|Failles]] — **un dossier par faille** (repérage → tests → payloads → bypass)
+- 🛠️ [[Outils - Index|Outils]] — les outils (sqlmap, ffuf, nmap, Caido…) + mes scripts
 
-## Accès rapide — techniques
+## Accès rapide — failles
 
-- ⭐ [[SQLI — Techniques avancées]]
-- ⭐ [[XSS — Techniques avancées]]
-
-## Notes transverses
-
-- [[XSS - Payloads]] · [[XSS - Liens utiles]] · [[SQLI - Bypass UNION SELECT]]
+- [[SQLI - Index]] · [[XSS - Index]] · [[File Upload - Index]] · [[SSRF - Index]] · [[XXE - Index]] · [[LFI - Index]] · [[GraphQL - Index]]
+- [[00 - Méthodologie & Arsenal]] — démarche d'audit + scripts transverses
 
 ## Cheatsheets
 

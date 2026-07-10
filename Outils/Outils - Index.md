@@ -1,21 +1,74 @@
 ---
 titre: "Outils — Index"
-tags: [index, outils, scripts]
+tags: [index, outils]
 ---
 
 # Outils — Index
 
-Scripts que j'ai développés et notes d'outillage.
+Base de connaissances des outils (téléchargement + utilisation), rangés par
+catégorie. Techniques d'attaque associées : dossier `Failles/`.
 
-## Mes scripts
-- [[Blind SQLi — Scripts d'automatisation]] — extraction blind SQLi / NoSQL en Python
-- [[UUID — Attaque temporelle (v1)]] — prédiction d'UUIDv1
-- [[XSS Finder]] — recherche/sélection de payloads XSS (HTML autonome + ~42 collections)
+> ⚠️ Outils offensifs : usage limité aux cibles explicitement autorisées. Cf. `README`.
 
-## Outillage & environnement
-- [[Outillage]] — WSL2, Exegol, VPN HTB, serveur d'exfiltration
-- [[Caido]] — proxy d'interception (alternative à Burp)
-- [[Nmap - Network Enumeration]] — énumération réseau
-- [[17 - Outils ffuf sqlmap]] — fuzzing (ffuf) et automatisation SQLi (sqlmap)
+## 🌐 Web / exploitation
+- [[CLI — ffuf, sqlmap, nmap, curl]] · [[Burp Suite]] · [[Caido]] · [[Nuclei]]
+- [[XSStrike]] · [[dalfox]] — XSS · [[SSTImap]] — SSTI · [[commix]] — command injection
+- [[NoSQLMap]] — NoSQL · [[jwt_tool]] — JWT · [[Arjun]] — paramètres cachés
+- [[feroxbuster & gobuster]] — content discovery · [[wpscan]] / [[WPProbe]] — WordPress
+- [[Outils GraphQL]]
 
-> ⚠️ Tous ces outils sont offensifs : usage limité aux cibles autorisées. Cf. `README`.
+## 🔎 Recon
+- [[Nmap - Network Enumeration]] · [[RustScan & masscan]] · [[Metasploit Framework]]
+- [[ProjectDiscovery (subfinder, httpx, naabu)]] · [[Amass]] · [[theHarvester]] · [[searchsploit]]
+
+## 🕵️ OSINT
+- [[Spiderfoot]] · [[Recon-ng]] · [[Maltego]]
+- [[sherlock]] · [[WhatsMyName]] · [[Maigret]] — usernames
+- [[holehe]] — email · [[GHunt]] — Google · [[phoneinfoga]] — téléphone
+- [[Overpass Turbo]] — geoint · [[Jimpl]] — EXIF/GPS · [[TinEye]] — reverse image
+- [[Wayback Machine]] — archives · [[Google Hacking Database (GHDB)]] — dorks
+
+## 🔑 Passwords & Hashes
+- [[John the Ripper]] · [[Hashcat]] · [[Identification de hash]]
+
+## 🧮 Crypto (CTF)
+- [[CyberChef]] · [[RsaCtfTool]] · [[dCode & SageMath]]
+
+## 💥 Pwn / Exploitation binaire
+- [[pwntools]] · [[ROPgadget & ropper]] · [[one_gadget]] · [[angr]]
+
+## 🔐 Secrets & Leaks
+- [[Betterleaks]] · [[TruffleHog]] · [[Gitleaks]] · [[git-dumper]]
+
+## 📶 Wi-Fi
+- [[aircrack-ng]] · [[Wifite]] · [[hcxtools]] · [[Bettercap]] · [[Fluxion]]
+
+## 🪟 Active Directory & Windows
+- [[Impacket]] · [[NetExec|NetExec (nxc)]] · [[BloodHound]] · [[Responder]] · [[Kerbrute]] · [[Mimikatz]]
+
+## 🎯 C2 & Red Team
+- [[AdaptixC2]] · [[Sliver]] · [[Havoc]] · [[Mythic]]
+
+## 🔀 Pivoting / Tunneling
+- [[chisel]] · [[ligolo-ng]] · [[proxychains & sshuttle]]
+
+## 🟣 Purple Team
+- [[Atomic-Operator]]
+
+## 🧬 Forensics & Reversing
+- [[Ghidra]] · [[radare2 & Cutter]] · [[GEF (GDB Enhanced Features)]] — reversing/pwn
+- [[binwalk]] · [[Wireshark & tshark]] · [[Volatility 3]] — forensics
+- [[Stéganographie (steghide, zsteg, stegsolve)]] · [[exiftool]]
+- [[pyinstxtractor]] · [[pycdc (décompilation .pyc)]] — Python
+
+## 🤖 IA & Assistants
+- [[MetasploitMCP]] · [[pentestMCP]] · [[PentestGPT]] · [[Pentest Copilot]] · [[hackingBuddyGPT]]
+
+## 🐍 Mes scripts
+- [[Blind SQLi — Scripts d'automatisation]] · [[UUID — Attaque temporelle (v1)]] · [[XSS Finder]]
+
+## 📚 Références & Wordlists
+- [[SecLists]] · [[PayloadsAllTheThings]] · [[GTFOBins & LOLBAS]] · [[HackTricks & revshells]]
+
+## ⚙️ Environnement
+- [[Outillage]] · [[ALHacking]] (⚠️ à connaître, pas à utiliser tel quel)
