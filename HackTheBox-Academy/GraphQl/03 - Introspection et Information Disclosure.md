@@ -48,6 +48,18 @@ Le fingerprinting fonctionne via des requêtes **volontairement malformées** : 
 ```
 → Trier : ignorer `String`, `Int`, `Boolean`, `__*`. Repérer les **types métier** et **l'intrus** (un `SecretObject`, `ApiKeyObject`…).
 
+
+
+
+### Niveau 1(fort) — Lister tous les types
+```graphql
+curl -s -X POST http://TARGET:PORT/graphql -H "Content-Type: application/json" -d '{"query":"query IntrospectionQuery { __schema { queryType { name kind } mutationType { name kind } subscriptionType { name kind } types { ...FullType } directives { name description locations args { ...InputValue } } } } fragment FullType on __Type { kind name description fields(includeDeprecated: true) { name description args { ...InputValue } type { ...TypeRef } isDeprecated deprecationReason } inputFields { ...InputValue } interfaces { ...TypeRef } enumValues(includeDeprecated: true) { name description isDeprecated deprecationReason } possibleTypes { ...TypeRef } } fragment InputValue on __InputValue { name description type { ...TypeRef } defaultValue } fragment TypeRef on __Type { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name ofType { kind name } } } } } } } }"}' | jq
+```
+→ Introspection complète
+
+
+
+
 ### Niveau 2 — Lister les queries + arguments
 ```graphql
 { __schema { queryType { fields { name description args { name type { name kind } } } } } }

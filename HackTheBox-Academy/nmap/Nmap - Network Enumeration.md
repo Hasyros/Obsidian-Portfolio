@@ -82,14 +82,14 @@ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
 
 Avant de scanner les ports, on détermine quels hôtes répondent. La méthode la plus efficace est l'**ICMP echo request**.
 
-| Option | Effet |
-|---|---|
-| `-sn` | Désactive le scan de ports (= ping scan seul) |
-| `-PE` | Force le ping via **ICMP Echo Request** |
-| `-Pn` | Désactive le ping (**traite tous les hôtes comme vivants**) |
-| `--disable-arp-ping` | Désactive l'ARP ping (sur LAN/segment local) |
-| `--packet-trace` | Affiche tous les paquets envoyés/reçus |
-| `--reason` | Affiche **pourquoi** Nmap classe l'hôte/port ainsi |
+| Option               | Effet                                                       |
+| -------------------- | ----------------------------------------------------------- |
+| `-sn`                | Désactive le scan de ports (= ping scan seul)               |
+| `-PE`                | Force le ping via **ICMP Echo Request**                     |
+| `-Pn`                | Désactive le ping (**traite tous les hôtes comme vivants**) |
+| `--disable-arp-ping` | Désactive l'ARP ping (sur LAN/segment local)                |
+| `--packet-trace`     | Affiche tous les paquets envoyés/reçus                      |
+| `--reason`           | Affiche **pourquoi** Nmap classe l'hôte/port ainsi          |
 
 > [!warning] Le piège de l'ARP ping sur réseau local
 > Quand tu fais `-sn` sur un segment local, Nmap envoie d'abord un **ARP request** avant l'ICMP. Il marque l'hôte « up » dès la **réponse ARP**, sans jamais envoyer le ping ICMP. Pour vraiment tester l'ICMP, combine `-PE --disable-arp-ping --packet-trace`.
