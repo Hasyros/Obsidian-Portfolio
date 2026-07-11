@@ -15,7 +15,7 @@ reconnaissance / les challenges OSINT.
 ```bash
 python3 sherlock.py <pseudo>              # depuis le repo cloné
 # ou : pipx install sherlock-project
-sherlock busterpiment                     # cherche le pseudo partout
+sherlock username                     # cherche le pseudo partout
 sherlock user1 user2 --timeout 5          # plusieurs cibles
 sherlock <pseudo> --csv                   # export CSV
 ```

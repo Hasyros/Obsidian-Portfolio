@@ -22,10 +22,10 @@ pour chaque site, l'URL de profil, le marqueur de « trouvé » et de « non tro
 ### En ligne de commande (consomment le même JSON)
 ```bash
 # Naminter (Python, concurrence + bypass Cloudflare)
-pipx install naminter && naminter -u busterpiment
+pipx install naminter && naminter -u username
 # Blackbird
 git clone https://github.com/p1ngul1n0/blackbird && cd blackbird
-pip install -r requirements.txt && python blackbird.py -u busterpiment
+pip install -r requirements.txt && python blackbird.py -u username
 ```
 Autres intégrations : extension Chrome « Who Am I » (WMN + Sherlock + Maigret),
 NameSeeker (desktop), LinkScope, versions Flask/Docker auto-hébergées.

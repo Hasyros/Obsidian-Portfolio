@@ -20,10 +20,10 @@ pipx install maigret
 
 ## Utilisation
 ```bash
-maigret busterpiment                         # recherche simple
-maigret busterpiment --html --pdf            # rapport HTML/PDF
-maigret busterpiment -a                       # all sites (exhaustif, plus lent)
-maigret busterpiment --top-sites 500          # limiter aux N sites les + courants
+maigret username                        # recherche simple
+maigret username --html --pdf            # rapport HTML/PDF
+maigret username -a                       # all sites (exhaustif, plus lent)
+maigret username --top-sites 500          # limiter aux N sites les + courants
 maigret --username user1 --username user2      # plusieurs cibles
 ```
 

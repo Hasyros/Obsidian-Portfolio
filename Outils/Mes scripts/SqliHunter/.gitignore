@@ -1,0 +1,32 @@
+# ============================================================================
+#  Données de scan / cibles / loot — SENSIBLE, NE JAMAIS COMMITTER
+#  (peut contenir des données extraites de cibles : credentials, dumps DB…)
+# ============================================================================
+output/
+output_*/
+loot/
+*.log
+*.sqlite
+sqlmap_results/
+
+# ---- Secrets / clés API ----
+.env
+*.env
+config.local.*
+
+# ---- Environnements virtuels ----
+env/
+venv/
+.venv/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
