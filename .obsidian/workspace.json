@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Outils/C2 & Red Team/Havoc.md",
+                "file": "Materiel/Kali2022-AWUS036ACH-driver.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Havoc"
+              "title": "Kali2022-AWUS036ACH-driver"
             }
           }
         ]
@@ -196,6 +196,10 @@
   },
   "active": "145be25f67a0d441",
   "lastOpenFiles": [
+    "Materiel/Kali2022-AWUS036ACH-driver 1.md",
+    "Materiel/Kali2022-AWUS036ACH-driver.md",
+    "Outils/C2 & Red Team/Havoc.md",
+    "Materiel",
     "Outils/C2 & Red Team/AdaptixC2.md",
     "Outils/OSINT/WhatsMyName.md",
     "Outils/OSINT/sherlock.md",
@@ -213,7 +217,6 @@
     "Outils/Mes scripts/SqliHunter/core/scanner.py",
     "Outils/Mes scripts/SqliHunter/core/analyzer.py",
     "Outils/Mes scripts/SqliHunter/core/reporter.py",
-    "Outils/Mes scripts/SqliHunter/core/loot.py",
     "Failles/XXE/3 - Payloads & bypass (XXE).md",
     "Failles/XXE/1 - Repérage (XXE).md",
     "Failles/GraphQL/1 - Fondamentaux & méthodologie.md",
@@ -229,9 +232,6 @@
     "Failles/Information Disclosure/1 - Repérage (Information Disclosure).md",
     "Failles/Information Disclosure/Information Disclosure - Index.md",
     "Failles/File Upload/3 - Payloads & bypass (File Upload).md",
-    "Failles/File Upload/2 - Exploitation & techniques (File Upload).md",
-    "Failles/File Upload/1 - Repérage (File Upload).md",
-    "Failles/File Upload/File Upload - Index.md",
     "CTF/MidNight/planet.png",
     "_attachments/Debutant_Complet/Debutant_Complet_08_83865e215e.png",
     "_attachments/Debutant_Complet/Debutant_Complet_07_9f46eb6b9c.png",
