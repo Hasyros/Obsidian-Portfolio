@@ -1,0 +1,8 @@
+# Normalise les fins de ligne dans le dépôt (LF), checkout natif par plateforme.
+* text=auto
+
+*.py    text
+*.md    text
+*.yaml  text
+*.txt   text
+*.exe   binary

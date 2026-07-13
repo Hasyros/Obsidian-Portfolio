@@ -1,0 +1,23 @@
+# Copier en config.yaml (a cote de ce fichier) et remplir ce qui est utile.
+# Tout est optionnel : sans cle, les moteurs concernes basculent en mode degrade.
+
+general:
+  output_dir: ./reports
+  db_path: ./osintforge.db
+  cache_ttl: 3600
+
+proxy:
+  enabled: false
+  url: ""            # ex: http://127.0.0.1:8080
+
+verify:
+  enabled: true      # deep-verify des profils candidats (Maigret/Sherlock)
+  workers: 30
+  timeout: 12
+
+api_keys:
+  hibp: ""           # Have I Been Pwned (fuites detaillees)
+  numverify: ""      # validation telephone
+  tineye: ""         # recherche image inversee (API)
+  github: ""
+  hunter_io: ""

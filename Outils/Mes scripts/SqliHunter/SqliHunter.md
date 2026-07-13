@@ -63,4 +63,4 @@ Théorie/techniques : [[SQLI - Index]] · [[XSS - Index]].
 Outils orchestrés : sqlmap/nmap ([[CLI — ffuf, sqlmap, nmap, curl]]),
 [[Nuclei]], [[ProjectDiscovery (subfinder, httpx, naabu)|subfinder]].
 Voisins maison : [[Blind SQLi — Scripts d'automatisation]] (probing SQLi manuel),
-[[XSS Finder]], [[OsintHunter]] (le pendant OSINT).
+[[XSS Finder]], [[OsintForge]] (le pendant OSINT).

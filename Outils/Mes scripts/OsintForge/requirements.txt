@@ -1,0 +1,19 @@
+# Core (required)
+requests>=2.31
+rich>=13.0
+
+# Optional — enable more engines
+PyYAML>=6.0          # config.yaml support
+pillow>=10.0         # image EXIF/GPS (Jimpl/EXIF engine)
+socialscan>=1.4      # username/email registration checks
+holehe>=1.61         # email -> registered sites
+maigret>=0.4         # 3000+ site username search
+sherlock-project     # 400+ site username search
+
+# External tools — NOT on PyPI, not pip deps of this project.
+# See tools/README.md for exact setup steps (git clone + deps) and known
+# Windows fixes. Summary:
+#   phoneinfoga  -> prebuilt binary in tools/bin/ (from GitHub releases)
+#   spiderfoot   -> git clone in tools/spiderfoot/ + pip install -r requirements.txt
+#   recon-ng     -> git clone in tools/recon-ng/  + pip install -r REQUIREMENTS
+#   ghunt        -> pip install ghunt   (then: ghunt login)

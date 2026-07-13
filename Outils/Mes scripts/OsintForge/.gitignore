@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- OsintForge runtime data ---
+*.db
+osintforge.db
+/reports/
+config.yaml          # peut contenir des cles API — ne pas committer
+
+# --- Outils externes (installes via tools/setup_tools.py, pas versionnes) ---
+/tools/bin/
+/tools/spiderfoot/
+/tools/recon-ng/
+/tools/_sf_requirements.txt
+
+# --- OS / editeurs ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

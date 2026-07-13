@@ -65,7 +65,7 @@ catégorie. Techniques d'attaque associées : dossier `Failles/`.
 - [[MetasploitMCP]] · [[pentestMCP]] · [[PentestGPT]] · [[Pentest Copilot]] · [[hackingBuddyGPT]]
 
 ## 🐍 Mes scripts & projets
-- ⭐ [[OsintHunter]] — orchestrateur OSINT multi-moteurs (deep-verify + corrélation ; TUI/CLI/API)
+- ⭐ [[OsintForge]] — orchestrateur OSINT multi-moteurs (findings typés + deep-verify ; 19 moteurs ; TUI/CLI)
 - ⭐ [[SqliHunter]] — auditeur SQLi/XSS/NoSQLi automatisé (recon → probe → sqlmap)
 - [[Blind SQLi — Scripts d'automatisation]] · [[UUID — Attaque temporelle (v1)]] · [[XSS Finder]]
 
