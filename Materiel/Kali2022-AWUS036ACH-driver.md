@@ -37,6 +37,8 @@ monitor/injection, installer les outils, puis lancer le module WiFi de NexusPi �
 > - ❌ `apt install linux-image-amd64 linux-headers-amd64`
 > - ❌ `apt full-upgrade`
 > - ❌ `apt install realtek-rtl88xxau-dkms` *(tire aussi `libc6` → même cascade — répondre `n`)*
+> - ❌ **tout script** qui fait `apt install` / `apt-get install` (installeur d'outil, etc.)
+>   → même cascade. **Lis le script avant de le lancer** (ça a mordu via `install-evilginx.sh`).
 >
 > **Règle d'or : on ne passe jamais par `apt` pour le noyau / le driver / les outils.**
 > On récupère les paquets **signés d'époque** depuis l'archive officielle `old.kali.org`
@@ -219,7 +221,24 @@ sudo dpkg -i hcxdumptool_6.2.5-2_amd64.deb hcxtools_6.2.5-2_amd64.deb \
 
 ---
 
-## Phase 6 — Récupérer NexusPi et lancer
+## Phase 6 — sudo sans mot de passe (OBLIGATOIRE pour l'appli)
+
+> [!CAUTION] Sans ça, les actions privilégiées échouent **en silence**
+> L'appli lance toutes ses commandes root via **`sudo -n`** (sudo non-interactif).
+> Sur une Kali 2022.2 fraîche, `sudo` **demande un mot de passe** → `sudo -n` échoue
+> → hostapd / dnsmasq / ip / airmon **ne démarrent pas**, sans aucune erreur visible
+> (Evil Twin qui « tourne » mais **0 client, pcap 0 octet**). C'est un piège vicieux :
+> tout a l'air de marcher, rien ne marche.
+
+Rendre `sudo` passwordless pour l'utilisateur `kali` (comme sur le Pi) :
+```bash
+echo "kali ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/nexuspi
+sudo chmod 440 /etc/sudoers.d/nexuspi
+sudo visudo -c                       # doit dire : ... analysé avec succès
+sudo -n true; echo "rc=$?"           # doit afficher rc=0
+```
+
+## Phase 7 — Récupérer NexusPi et lancer
 
 ```bash
 cd ~
@@ -259,6 +278,27 @@ sudo modprobe 88XXau
 > ré-énumération USB `phy0→phy3`). Fallback fiable : passer par **`airmon-ng`**
 > (`sudo airmon-ng check kill && sudo airmon-ng start wlan0`) et **vérifier** l'état via
 > `iw dev wlan0 info`. Si la carte reste coincée → recréer la VM proprement.
+
+> [!WARNING] Evil Twin « tourne » mais **0 client / pcap 0 octet**
+> Presque toujours le **`sudo -n`** qui échoue faute de NOPASSWD → hostapd/dnsmasq ne
+> démarrent jamais (AP invisible). Vérifier `sudo -n true; echo $?` (doit être 0) et
+> appliquer la **Phase 6**. Vérif isolée : `sudo hostapd /tmp/nexuspi/eviltwin/hostapd.conf`
+> doit sortir `AP-ENABLED`.
+
+> [!WARNING] `wifi_diag.py` : tout en **EPERM / Operation not permitted**
+> Tu l'as lancé **sans `sudo`** → `sudo python3 wifi_diag.py`. (Si EPERM persiste même
+> en root : carte coincée → `sudo rfkill unblock all` + ré-attach USB.)
+
+> [!CAUTION] Cascade glibc déclenchée par erreur (un `apt install` est passé)
+> Symptômes : `dpkg`/`apt` mentionnent `libc6 2.42`, `Perl v5.36.0 required`, des
+> paquets « non configurés ». Récupération **sans toucher au noyau** :
+> 1. `sudo apt --fix-broken install` — **vérifie le récap** : il doit être **borné**
+>    (≈ 8 paquets `libc*`/`dpkg-dev`, **jamais de noyau ni gcc**). Sinon tape `n` et stop.
+> 2. Si seul **`kali-menu`** casse (postinst Perl 5.36 vs 5.34) → stub cosmétique :
+>    `printf '#!/usr/bin/perl\nexit 0;\n' | sudo tee /usr/share/kali-menu/update-kali-menu`
+>    puis `sudo dpkg --configure -a` (évite d'installer Perl 5.36 = encore du creep).
+> 3. Vérifier : `sudo apt-get check` (rc=0) et `uname -r` **toujours `5.16.0-kali7-amd64`**
+>    → le driver est sauf. On perd le figeage glibc, mais noyau/driver intacts, WiFi OK.
 
 > [!WARNING] `apt update` : `NO_PUBKEY ED65462EC8D5E4C5`
 > Clé de signature Kali expirée → refaire la **Phase 1**.
