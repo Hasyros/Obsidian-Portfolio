@@ -67,6 +67,7 @@ catégorie. Techniques d'attaque associées : dossier `Failles/`.
 ## 🐍 Mes scripts & projets
 - ⭐ [[OsintForge]] — orchestrateur OSINT multi-moteurs (findings typés + deep-verify ; 19 moteurs ; TUI/CLI)
 - ⭐ [[SqliHunter]] — auditeur SQLi/XSS/NoSQLi automatisé (recon → probe → sqlmap)
+- [[nboosted]] — CloakQuest3r + nmap -sV -sC en une commande (IP réelle derrière Cloudflare → ports/versions, 10 scans en parallèle)
 - [[Blind SQLi — Scripts d'automatisation]] · [[UUID — Attaque temporelle (v1)]] · [[XSS Finder]]
 
 ## 📚 Références & Wordlists
