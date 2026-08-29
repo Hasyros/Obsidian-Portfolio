@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Outils/Web/XSStrike.md",
+                "file": "Outils/IA & Assistants/Strix.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSStrike"
+              "title": "Strix"
             }
           }
         ]
@@ -196,12 +196,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "120a4c390b95b8d8",
+  "active": "145be25f67a0d441",
   "lastOpenFiles": [
+    "Outils/Web/XSStrike.md",
     "Outils/IA & Assistants/Strix.md",
     "Outils/Web/XSStrike (1).md",
     "Outils/Web/WPProbe.md",
-    "Outils/Web/XSStrike.md",
     "Outils/Mes scripts/XSS Finder/XSS Finder.md",
     "Outils/Mes scripts/WORKFLOW.md",
     "Outils/Mes scripts/nboosted.md",
