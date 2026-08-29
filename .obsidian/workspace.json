@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Failles/LFI/LFI-RFI-Memo-Complet.md",
+                "file": "Outils/Mes scripts/WORKFLOW.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LFI-RFI-Memo-Complet"
+              "title": "WORKFLOW"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorateur de fichiers"
@@ -196,8 +198,16 @@
   },
   "active": "145be25f67a0d441",
   "lastOpenFiles": [
-    "Failles/LFI/1 - Repérage (LFI).md",
+    "Outils/Mes scripts/nboosted.md",
+    "Outils/Mes scripts/WORKFLOW.md",
+    "Outils/Environnement/Outillage.md",
+    "Outils/Environnement/ALHacking.md",
+    "Outils/Outils - Index.md",
+    "Outils/IA & Assistants/MetasploitMCP.md",
     "Failles/LFI/LFI-RFI-Memo-Complet.md",
+    "Outils/Mes scripts/WORKFLOW 1.md",
+    "Outils/Wi-Fi/capture-handshake-alfa-awus.md",
+    "Failles/LFI/1 - Repérage (LFI).md",
     "Failles/Ai/Cours - AI Evasion Good Words.md",
     "Failles/Ai/Ai Evasion",
     "Outils/Mes scripts/OsintForge/OsintForge.md",
@@ -224,14 +234,6 @@
     "Outils/C2 & Red Team/AdaptixC2.md",
     "Outils/OSINT/WhatsMyName.md",
     "Outils/OSINT/sherlock.md",
-    "Outils/Mes scripts/OsintHunter/OsintHunter.md",
-    "Bienvenue.md",
-    "Planning/Planning HTB Academy — Été 2026 (Red Team Track).md",
-    "Outils/Mes scripts/SqliHunter/SqliHunter.md",
-    "Failles/XXE/3 - Payloads & bypass (XXE).md",
-    "Failles/XXE/1 - Repérage (XXE).md",
-    "Failles/GraphQL/1 - Fondamentaux & méthodologie.md",
-    "CTF/RootMe/SQLI/SQLI Error Based.md",
     "CTF/MidNight/planet.png",
     "_attachments/Debutant_Complet/Debutant_Complet_08_83865e215e.png",
     "_attachments/Debutant_Complet/Debutant_Complet_07_9f46eb6b9c.png",
